@@ -17,4 +17,6 @@ Route::get('/clientes', 'PagesController@clientes');
 Route::get('/proveedores', 'PagesController@proveedores');
 Route::get('/venta', 'PagesController@venta');
 Route::get('/login', 'PagesController@login');
+Route::get('/registrarClientes', 'PagesController@registrarClientes');
+Route::resource('clientes', 'Clientes_Controller');
 

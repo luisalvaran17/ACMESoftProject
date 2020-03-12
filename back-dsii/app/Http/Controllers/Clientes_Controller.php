@@ -15,9 +15,11 @@ class Clientes_Controller extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    {   
+        $checkedAll = true;
         $clientes = Clientes::where('estado', true)->with('tipo_documento:id_tipo_documento,descripcion')->get();
-        return response()->json($clientes,201);
+        return view('pages.clientes')->with('clientes', $clientes);
+        //return response()->json($clientes,201);
     }
 
     /**

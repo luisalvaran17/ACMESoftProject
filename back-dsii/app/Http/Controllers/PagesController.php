@@ -25,4 +25,7 @@ class PagesController extends Controller
     public function login(){
         return view('pages.login');
     }
+    public function registrarClientes(){
+        return view('pages.registrarClientes');
+    }
 }
