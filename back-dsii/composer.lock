@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b6d62e3328e2ddda234560841055aab",
+    "content-hash": "59cf61876d857f2ea179f8dc7c59cf67",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -470,16 +470,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.8.37",
+            "version": "v5.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "ce08aaee3a0b8bb58b459b2decf7f25ba7b10fa4"
+                "reference": "e6c8aa0e39d8f91068ad1c299546536e9f25ef63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/ce08aaee3a0b8bb58b459b2decf7f25ba7b10fa4",
-                "reference": "ce08aaee3a0b8bb58b459b2decf7f25ba7b10fa4",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/e6c8aa0e39d8f91068ad1c299546536e9f25ef63",
+                "reference": "e6c8aa0e39d8f91068ad1c299546536e9f25ef63",
                 "shasum": ""
             },
             "require": {
@@ -562,7 +562,6 @@
             "suggest": {
                 "aws/aws-sdk-php": "Required to use the SQS queue driver and SES mail driver (^3.0).",
                 "doctrine/dbal": "Required to rename columns and drop SQLite columns (^2.6).",
-                "ext-gd": "Required to use Illuminate\\Http\\Testing\\FileFactory::image().",
                 "ext-pcntl": "Required to use all features of the queue worker.",
                 "ext-posix": "Required to use all features of the queue worker.",
                 "filp/whoops": "Required for friendly error pages in development (^2.1.4).",
@@ -614,7 +613,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-02-14T14:29:11+00:00"
+            "time": "2019-02-26T15:42:06+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -3210,16 +3209,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v3.6.0",
+            "version": "v3.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "1bdf24f065975594f6a117f0f1f6cabf1333b156"
+                "reference": "8f7961f7b9deb3b432452c18093cf16f88205902"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/1bdf24f065975594f6a117f0f1f6cabf1333b156",
-                "reference": "1bdf24f065975594f6a117f0f1f6cabf1333b156",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8f7961f7b9deb3b432452c18093cf16f88205902",
+                "reference": "8f7961f7b9deb3b432452c18093cf16f88205902",
                 "shasum": ""
             },
             "require": {
@@ -3228,7 +3227,11 @@
                 "symfony/polyfill-ctype": "^1.9"
             },
             "require-dev": {
+                "ext-filter": "*",
                 "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
+            },
+            "suggest": {
+                "ext-filter": "Required to use the boolean validator."
             },
             "type": "library",
             "extra": {
@@ -3263,7 +3266,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2019-09-10T21:37:39+00:00"
+            "time": "2020-03-12T13:44:00+00:00"
         }
     ],
     "packages-dev": [

@@ -10,13 +10,25 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+#Welcome
 Route::get('/', 'PagesController@index');
-Route::get('/productos', 'PagesController@productos');
-Route::get('/clientes', 'PagesController@clientes');
-Route::get('/proveedores', 'PagesController@proveedores');
-Route::get('/venta', 'PagesController@venta');
+
+#Login
 Route::get('/login', 'PagesController@login');
-Route::get('/registrarClientes', 'PagesController@registrarClientes');
-Route::resource('clientes', 'Clientes_Controller');
+
+#Registrar
+Route::get('/registrar/productos', 'PagesController@productos');
+Route::get('/registrar/proveedores', 'PagesController@proveedores');
+Route::get('/registrar/registrarClientes', 'PagesController@registrarClientes');
+Route::get('/registrar/ventas', 'PagesController@venta');
+
+#Consultar
+Route::get('/consultar/clientes', 'PagesController@clientes');
+Route::get('/consultar/productos', 'PagesController@consultarProductos');
+Route::get('/consultar/ventas', 'PagesController@consultarVentas');
+Route::get('/consultar/proveedores', 'PagesController@consultarProveedores');
+
+Route::resource('consultar/clientes', 'Clientes_Controller'); # importante para traer variables añ front end
+
+#Actualizar
 

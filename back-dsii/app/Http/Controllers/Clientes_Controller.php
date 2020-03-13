@@ -18,7 +18,7 @@ class Clientes_Controller extends Controller
     {   
         $checkedAll = true;
         $clientes = Clientes::where('estado', true)->with('tipo_documento:id_tipo_documento,descripcion')->get();
-        return view('pages.clientes')->with('clientes', $clientes);
+        return view('pages.consultar.clientes')->with('clientes', $clientes);
         //return response()->json($clientes,201);
     }
 
@@ -53,11 +53,11 @@ class Clientes_Controller extends Controller
             //Guardamos el cambio en nuestro modelo
             $cliente->save();
             //$cliente->setHidden(['created_at', 'updated_at']);
-            return response()->json($cliente,201);
+            //return response()->json($cliente,201);
         }if($validator->fails()){
             return response()->json($validator->errors()->all(), 422);
         }
-         
+        return view('pages.registrarClientes')->with('cliente', $cliente);
     }
 
     /**
